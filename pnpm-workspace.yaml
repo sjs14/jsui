@@ -1,0 +1,4 @@
+packages:
+  - play # 存在组件测试文件
+  - docs # 存在组件使用文档
+  - "packages/**"

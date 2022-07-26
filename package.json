@@ -1,0 +1,19 @@
+{
+  "name": "jsui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "show": "pnpm -C play dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jsui/components": "workspace:*",
+    "@jsui/theme-chalk": "workspace:*",
+    "@jsui/utils": "workspace:*",
+    "typescript": "^4.7.4",
+    "vue": "^3.2.37"
+  }
+}
