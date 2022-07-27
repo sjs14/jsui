@@ -13,7 +13,6 @@
     "@jsui/components": "workspace:*",
     "@jsui/theme-chalk": "workspace:*",
     "@jsui/utils": "workspace:*",
-    "@vicons/ionicons5": "^0.12.0",
     "typescript": "^4.7.4",
     "vue": "^3.2.37"
   },

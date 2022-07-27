@@ -16,9 +16,6 @@ const style = computed(() => {
   }
 })
 
-const a = '1'
-
-console.log(a)
 
 const iconComp = computed(() => {
   return props.name && (ionicons5 as { [key: string]: any })[props.name]
