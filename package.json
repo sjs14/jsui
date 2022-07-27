@@ -13,10 +13,16 @@
     "@jsui/components": "workspace:*",
     "@jsui/theme-chalk": "workspace:*",
     "@jsui/utils": "workspace:*",
+    "@vicons/ionicons5": "^0.12.0",
     "typescript": "^4.7.4",
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "eslint": "^8.20.0",
+    "eslint-plugin-vue": "^9.3.0",
     "unplugin-vue-define-options": "^0.6.2"
   }
 }
