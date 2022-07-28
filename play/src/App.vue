@@ -1,19 +1,22 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { toRefs } from 'vue'
+import useGetTreeData from './hooks/useGetTreeData'
 
-const num = ref<number>(111231)
+const { data } = toRefs(useGetTreeData())
 </script>
 
 <template>
   <section class="App">
-    <h1>{{ num }}</h1>
-    <js-icon color="red" size="32px" name="Airplane" />
+    <js-icon color="red" size="32px" name="Add" />
     <js-icon color="yellow" size="32px" name="AddCircle" />
     <js-icon color="grren" size="32px" name="Alarm" />
+
+    <js-tree :data="data" key-field="id" />
   </section>
 </template>
 
 <style lang="less" scoped>
 .App {
+  text-align: left;
 }
 </style>
