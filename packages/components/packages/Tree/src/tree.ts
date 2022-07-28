@@ -1,10 +1,11 @@
 import { ExtractPropTypes, PropType } from 'vue'
 
+type Key = number | string
 export interface TreeItem extends Required<Tree> {
   level: number
-  rawNode: Tree,
-  children:TreeItem[],
-  isLeaf:boolean
+  rawNode: Tree
+  children: TreeItem[]
+  isLeaf: boolean
 }
 
 export interface Tree {
@@ -30,6 +31,10 @@ export const treeProps = {
   childrenField: {
     type: String,
     default: 'children'
+  },
+  defaultExpandedKeys: {
+    type: Array as PropType<Key[]>,
+    default: () => []
   }
 } as const
 

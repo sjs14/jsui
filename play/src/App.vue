@@ -11,7 +11,7 @@ const { data } = toRefs(useGetTreeData())
     <js-icon color="yellow" size="32px" name="AddCircle" />
     <js-icon color="grren" size="32px" name="Alarm" />
 
-    <js-tree :data="data" key-field="id" />
+    <js-tree :data="data" key-field="id" :default-expanded-keys="['node-1','node-1-1','node-2']" />
   </section>
 </template>
 
